@@ -4,8 +4,8 @@ DocMeta.setdocmeta!(SLAM_test, :DocTestSetup,
     :(using SLAM_test); recursive=true)
 
 makedocs(
-    sitename= SLAM_test",
-    modules= SLAM_test],
+    sitename="SLAM_test",
+    modules=[SLAM_test],
     format=Documenter.HTML(
         prettyurls=get(ENV, "CI", nothing) == "true",
         assets=["assets/aligned.css"]),
