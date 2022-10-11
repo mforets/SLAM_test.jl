@@ -1,11 +1,11 @@
-using Documenter, Template
+using Documenter, SLAM_test
 
-DocMeta.setdocmeta!(Template, :DocTestSetup,
-    :(using Template); recursive=true)
+DocMeta.setdocmeta!(SLAM_test, :DocTestSetup,
+    :(using SLAM_test); recursive=true)
 
 makedocs(
-    sitename="Template",
-    modules=[Template],
+    sitename= SLAM_test",
+    modules= SLAM_test],
     format=Documenter.HTML(
         prettyurls=get(ENV, "CI", nothing) == "true",
         assets=["assets/aligned.css"]),
@@ -16,6 +16,6 @@ makedocs(
 )
 
 deploydocs(
-    repo="github.com/mforets/Template.jl.git",
+    repo="github.com/mforets SLAM_test.jl.git",
     push_preview=true
 )
